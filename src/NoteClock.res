@@ -24,18 +24,7 @@ let pr_time = time => {
   let (tm_sec, tm_min, tm_hour) = tm
   Js.log4("\027[8D%02d:%02d:%02d%!", tm_hour, tm_min, tm_sec)
 }
-// let pr_time = time => {
-//   let tm = Unix.localtime(~time);
-//   let (tm_sec, tm_min, tm_hour) = tm;
-//   Printf.printf("\027[8D%02d:%02d:%02d%!", tm_hour, tm_min, tm_sec);
-// };
-// let pr_time = time => {
-//   let tm = Unix.localtime(~time);
-//   let (tm_sec, tm_min, tm_hour) = tm;
-//   Printf.printf("\027[8D%02d:%02d:%02d%!", tm_hour, tm_min, tm_sec);
-// };
 
-// open Note;
 
 let (seconds, run) = {
   let (e, send) = Note.E.create()
