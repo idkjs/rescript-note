@@ -229,7 +229,7 @@ module E: {
     let v: (event<'a>, event<'b>) => event<('a, 'b)>
   }
 
-  let dump_src_ids: (Format.formatter, event<'a>) => unit
+  let dump_src_ids: (unit, event<'a>) => unit
 }
 
 @ocaml.doc(" Signals.
@@ -473,7 +473,7 @@ module S: {
     let v: (signal<'a>, signal<'b>) => signal<('a, 'b)>
   }
 
-  let dump_src_ids: (Format.formatter, signal<'a>) => unit
+  let dump_src_ids: (unit, signal<'a>) => unit
 }
 /* ---------------------------------------------------------------------------
    Copyright (c) 2018 The note programmers

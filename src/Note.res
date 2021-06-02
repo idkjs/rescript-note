@@ -120,7 +120,7 @@ and C: {
   let delay: ('a, Lazy.t<t<'a>>) => t<'a>
   let fix: (~eq: ('a, 'a) => bool=?, 'a, t<'a> => (t<'a>, 'b)) => 'b
   let defer: ('a, t<'a>) => t<'a>
-  let dump_src_ids: (Format.formatter, t<'a>) => unit
+  let dump_src_ids: (unit, t<'a>) => unit
 } = {
   type rec t<'a> = {
     mutable eq: ('a, 'a) => bool /* testing for cell value equality */,
