@@ -307,7 +307,7 @@ and Logr: {
   let const: 'a => obs<'a>
   let obs_cell: C.t<'a> => obs<'a>
   let app: (obs<'a => 'b>, obs<'a>) => obs<'b>
-  let \"$": (obs<'a => 'b>, obs<'a>) => obs<'b>
+  let dollar: (obs<'a => 'b>, obs<'a>) => obs<'b>
   type t
   let create: (~now: bool=?, obs<unit>) => t
   let for_cell: (~now: bool=?, C.t<'a>, 'a => unit) => t
@@ -322,7 +322,7 @@ and Logr: {
   let const = v => (list{}, () => v)
   let obs_cell = c => (list{C.C(c)}, () => C.value(c))
   let app = ((fcs, f), (vcs, v)) => (List.rev_append(fcs, vcs), () => f()(v()))
-  let \"$" = app
+  let dollar = app
   type t = {
     mutable stamp: Step.t,
     mutable srcs: Srcs.t /* sources we are registered with */,

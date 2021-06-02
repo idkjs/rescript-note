@@ -189,7 +189,7 @@ var Logr = Caml_module.init_mod([
         ],
         [
           /* Function */0,
-          "$"
+          "dollar"
         ],
         [
           /* Function */0,
@@ -1008,7 +1008,7 @@ Caml_module.update_mod({
         ],
         [
           /* Function */0,
-          "$"
+          "dollar"
         ],
         [
           /* Function */0,
@@ -1047,7 +1047,7 @@ Caml_module.update_mod({
       $$const: $$const$1,
       obs_cell: obs_cell,
       app: app,
-      $: app,
+      dollar: app,
       create: create$3,
       for_cell: for_cell,
       force: force,
@@ -2121,7 +2121,7 @@ var Logr_const = Logr.$$const;
 
 var Logr_app = Logr.app;
 
-var Logr_$ = Logr.$;
+var Logr_dollar = Logr.dollar;
 
 var Logr_create = Logr.create;
 
@@ -2138,7 +2138,7 @@ var Logr_unhold_all = Logr.unhold_all;
 var Logr$1 = {
   $$const: Logr_const,
   app: Logr_app,
-  $: Logr_$,
+  dollar: Logr_dollar,
   create: Logr_create,
   force: Logr_force,
   destroy: Logr_destroy,

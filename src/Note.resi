@@ -37,7 +37,7 @@ module Logr: {
       changes of [f] to the ones of [v]. ")
   let app: (obs<'a => 'b>, obs<'a>) => obs<'b>
   @ocaml.doc(" [f $ v] is [app f v]. ")
-  let \"$": (obs<'a => 'b>, obs<'a>) => obs<'b>
+  let dollar: (obs<'a => 'b>, obs<'a>) => obs<'b>
   @ocaml.doc(" {1:loggers Loggers} ") @ocaml.doc(" The type for loggers. ")
   type t
   @ocaml.doc(" [create ~now o] is a logger that observes changes to [o]. If
