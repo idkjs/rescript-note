@@ -19,3 +19,7 @@ npm install
 ```sh
 node src/Demo.bs.js
 ```
+
+## Issue
+
+Waiting on feedback on this [issue](https://github.com/rescript-lang/rescript-compiler/issues/5161#issue-908782410)
